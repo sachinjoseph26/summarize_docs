@@ -1,8 +1,11 @@
 streamlit
 phidata
-qdrant-client
 openai
 pypdf
 python-docx
 rich
 typer
+PyMuPDF  
+python-dotenv  
+tqdm  
+fitz

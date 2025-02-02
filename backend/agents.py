@@ -21,7 +21,7 @@ def summarize_text(document_text):
             {"role": "user", "content": f"Summarize this document: {document_text[:4000]}"}  # Limit input
         ]
     )
-    return response  # Return the summary
+    return response.content  # Return the summary
 
 # Q&A Agent (Phidata-based)
 qa_agent = Agent(
@@ -39,4 +39,4 @@ def ask_question(document_text, user_question):
             {"role": "user", "content": f"Based on this document: {document_text[:4000]}, answer: {user_question}"}
         ]
     )
-    return response  # Return the answer
+    return response.content  # Return the answer
