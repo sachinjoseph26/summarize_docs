@@ -3,7 +3,7 @@ name: Deploy Streamlit App
 on:
   push:
     branches:
-      - main  # Runs when pushing to the main branch
+      - main  # Triggers deployment when code is pushed to main branch
 
 jobs:
   deploy:
@@ -22,13 +22,6 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Deploy to Streamlit Cloud
+      - name: Notify Streamlit Cloud
         run: |
-          curl -X POST "https://summarizedocs-cihkilgs45pfykkufvslrs.streamlit.app/" \
-          -H "Authorization: Bearer ${{ secrets.STREAMLIT_DEPLOY_KEY }}" \
-          -H "Content-Type: application/json" \
-          -d '{
-            "repository": "https://github.com/sachinjoseph26/summarize_docs",
-            "branch": "main",
-            "script": "frontend/app.py"
-          }'
+          echo "Deployment triggered on Streamlit Cloud. Streamlit will automatically fetch changes."
