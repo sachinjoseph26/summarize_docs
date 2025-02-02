@@ -1,0 +1,8 @@
+streamlit
+phidata
+qdrant-client
+openai
+pypdf
+python-docx
+rich
+typer
