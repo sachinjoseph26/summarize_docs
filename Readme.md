@@ -10,25 +10,28 @@ An **AI-powered document summarization and Q&A system** built using **Streamlit,
 ✅ Secure **API Key Handling** with **Streamlit Secrets Manager**  
 
 ---
+## Template
+![alt text](./Mockup.png) 
 
+---
 ## 📂 Project Structure
 ```sh
 📂 summarize_docs
-|    | 📂 backend 
+|    📂 backend 
 |    │ │── 📄 init.py  
-|    │ │── 📄 agents.py # Phidata AI Agents  
+|    │ │── 📄 agents.py   
 |    │ │── 📄 config.py 
 |    │ │── 📄 document_processing.py 
-|    │ 📂 frontend 
+|    📂 frontend 
 |    │ │── 📄 app.py 
-|    │ 📂 .github 
+|    📂 .github 
 |    │ │── 📂 workflows 
 |    │      |── 📄 deploy.yml
-|    │── 📂 uploads 
-|    │── 📄 .env  
-|    │── 📄 .gitignore 
-|    │── 📄 README.md
-|    │── 📄 requirements.txt 
+|    📂 uploads 
+|    📄 .env  
+|    📄 .gitignore 
+|    📄 README.md
+|    📄 requirements.txt 
 
 ```
 
