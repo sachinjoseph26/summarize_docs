@@ -1,4 +1,4 @@
-# 📄 AI-Powered Document Summarization & Q&A 
+## 📄 AI-Powered Document Summarization & Q&A 
 
 **AI-powered document summarization and Q&A system** built using **Streamlit, Phidata, and OpenAI**.
 
